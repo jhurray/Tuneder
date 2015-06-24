@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TDBaseViewController.h"
+#import "TDPickerViewController.h"
 #import "TDMusicManager.h"
 
 @interface AppDelegate ()
@@ -19,10 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
-    [TDMusicManager test];
-    
-    TDBaseViewController *vc = [[TDBaseViewController alloc] init];
+    TDPickerViewController *vc = [[TDPickerViewController alloc] init];
     vc.title = @"Test";
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];

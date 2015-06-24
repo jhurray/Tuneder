@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2670B1D41B39849300E321E2 /* TDPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1D31B39849300E321E2 /* TDPickerViewController.m */; };
+		2670B1F81B3984F200E321E2 /* EZLayoutAlignment+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1DA1B3984F200E321E2 /* EZLayoutAlignment+Private.m */; };
+		2670B1F91B3984F200E321E2 /* EZLayoutAlignment+Shorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1DC1B3984F200E321E2 /* EZLayoutAlignment+Shorthand.m */; };
+		2670B1FA1B3984F200E321E2 /* EZLayoutAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1DE1B3984F200E321E2 /* EZLayoutAlignment.m */; };
+		2670B1FB1B3984F200E321E2 /* EZLayoutContainerView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1E11B3984F200E321E2 /* EZLayoutContainerView+Private.m */; };
+		2670B1FC1B3984F200E321E2 /* EZLayoutContainerView+Shorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1E31B3984F200E321E2 /* EZLayoutContainerView+Shorthand.m */; };
+		2670B1FD1B3984F200E321E2 /* EZLayoutContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1E51B3984F200E321E2 /* EZLayoutContainerView.m */; };
+		2670B1FE1B3984F200E321E2 /* EZLayoutDebugLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1E71B3984F200E321E2 /* EZLayoutDebugLayer.m */; };
+		2670B1FF1B3984F200E321E2 /* EZLayoutFlexibleRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1E91B3984F200E321E2 /* EZLayoutFlexibleRatio.m */; };
+		2670B2001B3984F200E321E2 /* EZLayoutSize+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1EB1B3984F200E321E2 /* EZLayoutSize+Private.m */; };
+		2670B2011B3984F200E321E2 /* EZLayoutSize+Shorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1ED1B3984F200E321E2 /* EZLayoutSize+Shorthand.m */; };
+		2670B2021B3984F200E321E2 /* EZLayoutSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1EF1B3984F200E321E2 /* EZLayoutSize.m */; };
+		2670B2031B3984F200E321E2 /* UIDevice+EZLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1F11B3984F200E321E2 /* UIDevice+EZLayout.m */; };
+		2670B2041B3984F200E321E2 /* UITextView+EZLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1F31B3984F200E321E2 /* UITextView+EZLayout.m */; };
+		2670B2051B3984F200E321E2 /* UIView+EZLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1F51B3984F200E321E2 /* UIView+EZLayout.m */; };
+		2670B2061B3984F200E321E2 /* UIView+EZLayout_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B1F71B3984F200E321E2 /* UIView+EZLayout_Private.m */; };
+		2670B20A1B39858C00E321E2 /* TDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B2091B39858C00E321E2 /* TDButton.m */; };
+		2670B20E1B3987F200E321E2 /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B20D1B3987F200E321E2 /* UIColor+Theme.m */; };
+		2670B2111B39A9C700E321E2 /* TDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B2101B39A9C700E321E2 /* TDCardView.m */; };
+		2670B2141B39AA3600E321E2 /* TDCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670B2131B39AA3600E321E2 /* TDCardContainer.m */; };
 		26D24E9A1ACF27D600000377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D24E991ACF27D600000377 /* main.m */; };
 		26D24E9D1ACF27D600000377 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D24E9C1ACF27D600000377 /* AppDelegate.m */; };
 		26D24EA01ACF27D600000377 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D24E9F1ACF27D600000377 /* ViewController.m */; };
@@ -30,6 +50,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2670B1D21B39849300E321E2 /* TDPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDPickerViewController.h; sourceTree = "<group>"; };
+		2670B1D31B39849300E321E2 /* TDPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDPickerViewController.m; sourceTree = "<group>"; };
+		2670B1D81B3984F200E321E2 /* EZLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZLayout.h; sourceTree = "<group>"; };
+		2670B1D91B3984F200E321E2 /* EZLayoutAlignment+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZLayoutAlignment+Private.h"; sourceTree = "<group>"; };
+		2670B1DA1B3984F200E321E2 /* EZLayoutAlignment+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZLayoutAlignment+Private.m"; sourceTree = "<group>"; };
+		2670B1DB1B3984F200E321E2 /* EZLayoutAlignment+Shorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZLayoutAlignment+Shorthand.h"; sourceTree = "<group>"; };
+		2670B1DC1B3984F200E321E2 /* EZLayoutAlignment+Shorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZLayoutAlignment+Shorthand.m"; sourceTree = "<group>"; };
+		2670B1DD1B3984F200E321E2 /* EZLayoutAlignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZLayoutAlignment.h; sourceTree = "<group>"; };
+		2670B1DE1B3984F200E321E2 /* EZLayoutAlignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZLayoutAlignment.m; sourceTree = "<group>"; };
+		2670B1DF1B3984F200E321E2 /* EZLayoutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZLayoutConstants.h; sourceTree = "<group>"; };
+		2670B1E01B3984F200E321E2 /* EZLayoutContainerView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZLayoutContainerView+Private.h"; sourceTree = "<group>"; };
+		2670B1E11B3984F200E321E2 /* EZLayoutContainerView+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZLayoutContainerView+Private.m"; sourceTree = "<group>"; };
+		2670B1E21B3984F200E321E2 /* EZLayoutContainerView+Shorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZLayoutContainerView+Shorthand.h"; sourceTree = "<group>"; };
+		2670B1E31B3984F200E321E2 /* EZLayoutContainerView+Shorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZLayoutContainerView+Shorthand.m"; sourceTree = "<group>"; };
+		2670B1E41B3984F200E321E2 /* EZLayoutContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZLayoutContainerView.h; sourceTree = "<group>"; };
+		2670B1E51B3984F200E321E2 /* EZLayoutContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZLayoutContainerView.m; sourceTree = "<group>"; };
+		2670B1E61B3984F200E321E2 /* EZLayoutDebugLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZLayoutDebugLayer.h; sourceTree = "<group>"; };
+		2670B1E71B3984F200E321E2 /* EZLayoutDebugLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZLayoutDebugLayer.m; sourceTree = "<group>"; };
+		2670B1E81B3984F200E321E2 /* EZLayoutFlexibleRatio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZLayoutFlexibleRatio.h; sourceTree = "<group>"; };
+		2670B1E91B3984F200E321E2 /* EZLayoutFlexibleRatio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZLayoutFlexibleRatio.m; sourceTree = "<group>"; };
+		2670B1EA1B3984F200E321E2 /* EZLayoutSize+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZLayoutSize+Private.h"; sourceTree = "<group>"; };
+		2670B1EB1B3984F200E321E2 /* EZLayoutSize+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZLayoutSize+Private.m"; sourceTree = "<group>"; };
+		2670B1EC1B3984F200E321E2 /* EZLayoutSize+Shorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EZLayoutSize+Shorthand.h"; sourceTree = "<group>"; };
+		2670B1ED1B3984F200E321E2 /* EZLayoutSize+Shorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EZLayoutSize+Shorthand.m"; sourceTree = "<group>"; };
+		2670B1EE1B3984F200E321E2 /* EZLayoutSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZLayoutSize.h; sourceTree = "<group>"; };
+		2670B1EF1B3984F200E321E2 /* EZLayoutSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZLayoutSize.m; sourceTree = "<group>"; };
+		2670B1F01B3984F200E321E2 /* UIDevice+EZLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+EZLayout.h"; sourceTree = "<group>"; };
+		2670B1F11B3984F200E321E2 /* UIDevice+EZLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+EZLayout.m"; sourceTree = "<group>"; };
+		2670B1F21B3984F200E321E2 /* UITextView+EZLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+EZLayout.h"; sourceTree = "<group>"; };
+		2670B1F31B3984F200E321E2 /* UITextView+EZLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+EZLayout.m"; sourceTree = "<group>"; };
+		2670B1F41B3984F200E321E2 /* UIView+EZLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EZLayout.h"; sourceTree = "<group>"; };
+		2670B1F51B3984F200E321E2 /* UIView+EZLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EZLayout.m"; sourceTree = "<group>"; };
+		2670B1F61B3984F200E321E2 /* UIView+EZLayout_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EZLayout_Private.h"; sourceTree = "<group>"; };
+		2670B1F71B3984F200E321E2 /* UIView+EZLayout_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EZLayout_Private.m"; sourceTree = "<group>"; };
+		2670B2081B39858C00E321E2 /* TDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDButton.h; sourceTree = "<group>"; };
+		2670B2091B39858C00E321E2 /* TDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDButton.m; sourceTree = "<group>"; };
+		2670B20C1B3987F200E321E2 /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
+		2670B20D1B3987F200E321E2 /* UIColor+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
+		2670B20F1B39A9C700E321E2 /* TDCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDCardView.h; sourceTree = "<group>"; };
+		2670B2101B39A9C700E321E2 /* TDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDCardView.m; sourceTree = "<group>"; };
+		2670B2121B39AA3600E321E2 /* TDCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDCardContainer.h; sourceTree = "<group>"; };
+		2670B2131B39AA3600E321E2 /* TDCardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDCardContainer.m; sourceTree = "<group>"; };
 		26D24E941ACF27D600000377 /* Tuneder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tuneder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D24E981ACF27D600000377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D24E991ACF27D600000377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,10 +131,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2670B1D71B3984F200E321E2 /* EZLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2670B1D81B3984F200E321E2 /* EZLayout.h */,
+				2670B1D91B3984F200E321E2 /* EZLayoutAlignment+Private.h */,
+				2670B1DA1B3984F200E321E2 /* EZLayoutAlignment+Private.m */,
+				2670B1DB1B3984F200E321E2 /* EZLayoutAlignment+Shorthand.h */,
+				2670B1DC1B3984F200E321E2 /* EZLayoutAlignment+Shorthand.m */,
+				2670B1DD1B3984F200E321E2 /* EZLayoutAlignment.h */,
+				2670B1DE1B3984F200E321E2 /* EZLayoutAlignment.m */,
+				2670B1DF1B3984F200E321E2 /* EZLayoutConstants.h */,
+				2670B1E01B3984F200E321E2 /* EZLayoutContainerView+Private.h */,
+				2670B1E11B3984F200E321E2 /* EZLayoutContainerView+Private.m */,
+				2670B1E21B3984F200E321E2 /* EZLayoutContainerView+Shorthand.h */,
+				2670B1E31B3984F200E321E2 /* EZLayoutContainerView+Shorthand.m */,
+				2670B1E41B3984F200E321E2 /* EZLayoutContainerView.h */,
+				2670B1E51B3984F200E321E2 /* EZLayoutContainerView.m */,
+				2670B1E61B3984F200E321E2 /* EZLayoutDebugLayer.h */,
+				2670B1E71B3984F200E321E2 /* EZLayoutDebugLayer.m */,
+				2670B1E81B3984F200E321E2 /* EZLayoutFlexibleRatio.h */,
+				2670B1E91B3984F200E321E2 /* EZLayoutFlexibleRatio.m */,
+				2670B1EA1B3984F200E321E2 /* EZLayoutSize+Private.h */,
+				2670B1EB1B3984F200E321E2 /* EZLayoutSize+Private.m */,
+				2670B1EC1B3984F200E321E2 /* EZLayoutSize+Shorthand.h */,
+				2670B1ED1B3984F200E321E2 /* EZLayoutSize+Shorthand.m */,
+				2670B1EE1B3984F200E321E2 /* EZLayoutSize.h */,
+				2670B1EF1B3984F200E321E2 /* EZLayoutSize.m */,
+				2670B1F01B3984F200E321E2 /* UIDevice+EZLayout.h */,
+				2670B1F11B3984F200E321E2 /* UIDevice+EZLayout.m */,
+				2670B1F21B3984F200E321E2 /* UITextView+EZLayout.h */,
+				2670B1F31B3984F200E321E2 /* UITextView+EZLayout.m */,
+				2670B1F41B3984F200E321E2 /* UIView+EZLayout.h */,
+				2670B1F51B3984F200E321E2 /* UIView+EZLayout.m */,
+				2670B1F61B3984F200E321E2 /* UIView+EZLayout_Private.h */,
+				2670B1F71B3984F200E321E2 /* UIView+EZLayout_Private.m */,
+			);
+			name = EZLayout;
+			path = Tuneder/EZLayout;
+			sourceTree = "<group>";
+		};
+		2670B2071B39857300E321E2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2670B2081B39858C00E321E2 /* TDButton.h */,
+				2670B2091B39858C00E321E2 /* TDButton.m */,
+				2670B20F1B39A9C700E321E2 /* TDCardView.h */,
+				2670B2101B39A9C700E321E2 /* TDCardView.m */,
+				2670B2121B39AA3600E321E2 /* TDCardContainer.h */,
+				2670B2131B39AA3600E321E2 /* TDCardContainer.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		2670B20B1B3987CF00E321E2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2670B20C1B3987F200E321E2 /* UIColor+Theme.h */,
+				2670B20D1B3987F200E321E2 /* UIColor+Theme.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		26D24E8B1ACF27D600000377 = {
 			isa = PBXGroup;
 			children = (
 				26D24EC61ACF2AA400000377 /* MediaPlayer.framework */,
+				2670B1D71B3984F200E321E2 /* EZLayout */,
 				26D24E961ACF27D600000377 /* Tuneder */,
 				26D24EB01ACF27D600000377 /* TunederTests */,
 				26D24E951ACF27D600000377 /* Products */,
@@ -91,6 +216,8 @@
 		26D24E961ACF27D600000377 /* Tuneder */ = {
 			isa = PBXGroup;
 			children = (
+				2670B20B1B3987CF00E321E2 /* Categories */,
+				2670B2071B39857300E321E2 /* UI */,
 				26D24EC11ACF299200000377 /* Objects */,
 				26D24EBD1ACF283400000377 /* View Controllers */,
 				26D24E9B1ACF27D600000377 /* AppDelegate.h */,
@@ -136,6 +263,8 @@
 			children = (
 				26D24EBE1ACF287A00000377 /* TDBaseViewController.h */,
 				26D24EBF1ACF287A00000377 /* TDBaseViewController.m */,
+				2670B1D21B39849300E321E2 /* TDPickerViewController.h */,
+				2670B1D31B39849300E321E2 /* TDPickerViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -258,10 +387,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2670B2031B3984F200E321E2 /* UIDevice+EZLayout.m in Sources */,
+				2670B2051B3984F200E321E2 /* UIView+EZLayout.m in Sources */,
+				2670B1D41B39849300E321E2 /* TDPickerViewController.m in Sources */,
+				2670B20A1B39858C00E321E2 /* TDButton.m in Sources */,
+				2670B2011B3984F200E321E2 /* EZLayoutSize+Shorthand.m in Sources */,
+				2670B2041B3984F200E321E2 /* UITextView+EZLayout.m in Sources */,
+				2670B1FD1B3984F200E321E2 /* EZLayoutContainerView.m in Sources */,
+				2670B1FC1B3984F200E321E2 /* EZLayoutContainerView+Shorthand.m in Sources */,
+				2670B1F81B3984F200E321E2 /* EZLayoutAlignment+Private.m in Sources */,
+				2670B1F91B3984F200E321E2 /* EZLayoutAlignment+Shorthand.m in Sources */,
+				2670B1FB1B3984F200E321E2 /* EZLayoutContainerView+Private.m in Sources */,
 				26D24EA01ACF27D600000377 /* ViewController.m in Sources */,
 				26D24E9D1ACF27D600000377 /* AppDelegate.m in Sources */,
 				26D24E9A1ACF27D600000377 /* main.m in Sources */,
+				2670B2141B39AA3600E321E2 /* TDCardContainer.m in Sources */,
+				2670B1FE1B3984F200E321E2 /* EZLayoutDebugLayer.m in Sources */,
+				2670B20E1B3987F200E321E2 /* UIColor+Theme.m in Sources */,
+				2670B2061B3984F200E321E2 /* UIView+EZLayout_Private.m in Sources */,
 				26D24EC51ACF29B900000377 /* TDMusicManager.m in Sources */,
+				2670B2001B3984F200E321E2 /* EZLayoutSize+Private.m in Sources */,
+				2670B1FF1B3984F200E321E2 /* EZLayoutFlexibleRatio.m in Sources */,
+				2670B2111B39A9C700E321E2 /* TDCardView.m in Sources */,
+				2670B1FA1B3984F200E321E2 /* EZLayoutAlignment.m in Sources */,
+				2670B2021B3984F200E321E2 /* EZLayoutSize.m in Sources */,
 				26D24EC01ACF287A00000377 /* TDBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +602,7 @@
 				26D24EB91ACF27D700000377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26D24EBA1ACF27D700000377 /* Build configuration list for PBXNativeTarget "TunederTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +611,7 @@
 				26D24EBC1ACF27D700000377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
