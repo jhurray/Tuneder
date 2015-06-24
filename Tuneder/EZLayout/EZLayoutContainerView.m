@@ -247,6 +247,7 @@
 
 - (void) attachToContainerView:(EZLayoutContainerView *)containerView {
     [containerView addSubview:self];
+    [containerView ezLayoutSubviews];
 }
 
 - (void) orientationChanged:(NSNotification *)notification {
@@ -386,6 +387,11 @@
 
 #pragma mark - Other
 - (void) ezLayoutSubviews {
+    
+    if (self.tag == 3) {
+        NSLog(@"FUUUUUUUCK");
+    }
+    
     [self removeCurrentViews];
     if (kEZDebugMode) {
         [EZLayoutDebugLayer removeAllFromView:self];

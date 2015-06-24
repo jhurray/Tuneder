@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     TDPickerViewController *vc = [[TDPickerViewController alloc] init];
-    vc.title = @"Test";
+    vc.title = @"Tuneder";
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     [self.window makeKeyAndVisible];
     

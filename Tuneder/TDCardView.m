@@ -31,6 +31,10 @@
 
 - (void) setupGestureRecognizer {
     self.panGestureRecognizer = [[UIPanGestureRecognizer alloc] init];
+    self.panGestureRecognizer.minimumNumberOfTouches = 1;
+    self.panGestureRecognizer.maximumNumberOfTouches = 1;
+    
+    [self addGestureRecognizer:self.panGestureRecognizer];
 }
 
 - (void) setupUI {
@@ -77,6 +81,16 @@
     if (self.mediaItem) {
         self.albumView.image = [_mediaItem.artwork imageWithSize:self.albumView.frame.size];
     }
+    [self addShadowtoView:self];
+}
+
+- (void) addShadowtoView:(UIView *)view {
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:view.bounds];
+    view.layer.masksToBounds = NO;
+    view.layer.shadowColor = [UIColor themeColor].CGColor;
+    view.layer.shadowOffset = CGSizeMake(-8.0f, 15.0f);
+    view.layer.shadowOpacity = 0.3;
+    view.layer.shadowPath = shadowPath.CGPath;
 }
 
 @end
