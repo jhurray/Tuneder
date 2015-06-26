@@ -45,12 +45,15 @@
     self.artistLabel.text = @"Artist";
     self.artistLabel.textAlignment = NSTextAlignmentCenter;
     self.artistLabel.font = [UIFont systemFontOfSize:14.0];
+    self.artistLabel.adjustsFontSizeToFitWidth = YES;
     
     self.titleLabel.text = @"Song title";
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.font = [UIFont boldSystemFontOfSize:16.0];
+    self.titleLabel.adjustsFontSizeToFitWidth = YES;
     
     self.albumView.backgroundColor = [UIColor themeColor];
+    self.albumView.image = [UIImage imageNamed:@"default_album"];
 }
 
 - (void) layoutUI {
@@ -58,12 +61,12 @@
         make.ezSize = [EZLayoutSize heightPercentage:0.8 scaleFactor:1.0];
         make.layer.cornerRadius = 8.0;
         make.layer.masksToBounds = YES;
-        make.layer.borderColor = [UIColor themeColor].CGColor;
-        make.layer.borderWidth = 2.0;
     }];
     
     self.titleLabel = [UILabel ezMakeBasic];
     self.artistLabel = [UILabel ezMakeBasic];
+    self.titleLabel.ezSize.widthPercentage = 0.9;
+    self.artistLabel.ezSize.widthPercentage = 0.9;
     [self verticallyLayoutViews:@[self.albumView, self.titleLabel, self.artistLabel]
                 withPercentages:@[@0.7, @0.15, @0.15]];
 }
@@ -74,12 +77,15 @@
     NSString *titleString = mediaItem.title ? mediaItem.title : @"Unknown Title";
     self.artistLabel.text = artistString;
     self.titleLabel.text = titleString;
-    self.albumView.image = [mediaItem.artwork imageWithSize:self.albumView.frame.size];
+    UIImage *albumImage = [mediaItem.artwork imageWithSize:self.albumView.frame.size];
+    self.albumView.image = albumImage ? albumImage : [UIImage imageNamed:@"default_album"];
 }
 
 - (void) layoutSubviews {
+    [super layoutSubviews];
     if (self.mediaItem) {
-        self.albumView.image = [_mediaItem.artwork imageWithSize:self.albumView.frame.size];
+        UIImage *albumImage = [_mediaItem.artwork imageWithSize:self.albumView.frame.size];
+        self.albumView.image = albumImage ? albumImage : [UIImage imageNamed:@"default_album"];
     }
     [self addShadowtoView:self];
 }

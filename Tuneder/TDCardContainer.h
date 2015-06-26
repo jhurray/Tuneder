@@ -17,12 +17,23 @@
 
 @end
 
+@protocol TDCardContainerDatasource <NSObject>
+
+- (MPMediaItem *) itemForTopCard;
+- (MPMediaItem *) itemForMiddleCard;
+- (MPMediaItem *) itemForBottomCard;
+- (MPMediaItem *) itemForCardOnDeck;
+
+@end
+
 @interface TDCardContainer : EZLayoutContainerView
 
 - (void) swipeLeft;
+- (void) swipeRight;
 
 @property (strong, nonatomic, readonly) TDCardView *topCard;
 
 @property (weak, nonatomic) id<TDCardContainerDelegate> delegate;
+@property (weak, nonatomic) id<TDCardContainerDatasource> datasource;
 
 @end

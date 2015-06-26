@@ -387,11 +387,6 @@
 
 #pragma mark - Other
 - (void) ezLayoutSubviews {
-    
-    if (self.tag == 3) {
-        NSLog(@"FUUUUUUUCK");
-    }
-    
     [self removeCurrentViews];
     if (kEZDebugMode) {
         [EZLayoutDebugLayer removeAllFromView:self];
@@ -408,6 +403,7 @@
         if (view.frameWasSetBlock) {
             view.frameWasSetBlock(self);
         }
+        view.transform = self.transform;
         if ([view isKindOfClass:[EZLayoutContainerView class]]) {
             EZLayoutContainerView *ezView = (EZLayoutContainerView *)view;
             [ezView ezLayoutSubviews];
@@ -435,6 +431,7 @@
         if (viewForLayout.frameWasSetBlock) {
             viewForLayout.frameWasSetBlock(self);
         }
+        viewForLayout.transform = self.transform;
         if ([viewForLayout isKindOfClass:[EZLayoutContainerView class]]) {
             EZLayoutContainerView *ezViewForLayout = (EZLayoutContainerView *)viewForLayout;
             [ezViewForLayout ezLayoutSubviews];

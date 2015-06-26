@@ -15,7 +15,7 @@
 }
 
 + (UIColor *) themeColor {
-    return [UIColor colorWithRed:100./255. green:150./255. blue:200./255 alpha:1.0];
+    return [UIColor colorWithRed:150./255. green:100./255. blue:200./255 alpha:1.0];
 }
 
 @end

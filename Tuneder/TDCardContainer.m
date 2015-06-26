@@ -20,6 +20,8 @@
 @property (nonatomic) CGRect originalMiddleFrame;
 @property (nonatomic) CGRect originalBottomFrame;
 
+- (void) setMediaItems;
+
 @end
 
 @implementation TDCardContainer
@@ -29,8 +31,19 @@
         self.topCardIsDragging = NO;
         [self layoutUI];
         [self.topCard.panGestureRecognizer addTarget:self action:@selector(topCardIsBeingPanned:)];
+        [self setMediaItems];
     }
     return self;
+}
+
+- (void) swipeLeft {
+    self.topCardIsDragging = YES;
+    [self topCardSwipedLeftWithVelocity:(CGPoint){-1500,400}];
+}
+
+- (void) swipeRight {
+    self.topCardIsDragging = YES;
+    [self topCardSwipedRightWithVelocity:(CGPoint){1500,400}];
 }
 
 
@@ -46,7 +59,7 @@
     
     // rotate
     CGFloat diff = sender.view.center.x - self.ezWidth/2.0;
-    //sender.view.transform = CGAffineTransformMakeRotation(diff*0.002);
+    sender.view.transform = CGAffineTransformMakeRotation(diff*0.002);
     
     // Interpolate Bottom cards
     CGFloat percentage = MIN(ABS((self.topCard.center.x - self.ezWidth/2.0)/(self.ezWidth/2.0)), 1.0);
@@ -72,12 +85,12 @@
 
 - (void) topCardWasReleasedWithVelocity:(CGPoint)velocity {
     CGFloat percentage = (self.topCard.center.x - self.ezWidth/2.0)/(self.ezWidth/2.0);
-    CGFloat pointOfNoReturn = 0.85;
+    CGFloat pointOfNoReturn = 0.95;
     NSLog(@"velocity is: %@", NSStringFromCGPoint(velocity));
-    if (percentage > pointOfNoReturn || velocity.x > 2000.0) {
+    if (percentage > pointOfNoReturn || velocity.x > 1500.0) {
         [self topCardSwipedRightWithVelocity:velocity];
     }
-    else if (percentage < -pointOfNoReturn || velocity.x < -2000.0) {
+    else if (percentage < -pointOfNoReturn || velocity.x < -1500.0) {
         [self topCardSwipedLeftWithVelocity:velocity];
     }
     else {
@@ -100,14 +113,14 @@
 }
 
 - (void) topCardSwipedRightWithVelocity:(CGPoint)velocity {
-    self.topCard.layer.shadowPath = nil;
-    [UIView animateWithDuration:0.3
+    NSTimeInterval duration = MIN(0.4, 0.4*2000./velocity.x);
+    [UIView animateWithDuration:duration
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         
-                         self.topCard.ezX = [UIDevice currentWidth]+self.topCard.ezWidth+50;
-                         self.topCard.ezY += velocity.y*0.05;
+                         self.topCard.transform = CGAffineTransformMakeRotation(M_PI_2);
+                         self.topCard.ezX = [UIDevice currentWidth]+self.topCard.ezWidth;
+                         self.topCard.ezY += velocity.y*0.2;
                          self.middleCard.frame = self.originalTopFrame;
                          self.bottomCard.frame = self.originalMiddleFrame;
                          self.cardOnDeck.alpha = 1.0;
@@ -121,15 +134,14 @@
 }
 
 - (void) topCardSwipedLeftWithVelocity:(CGPoint)velocity {
-    self.topCard.layer.shadowPath = nil;
-    [UIView animateWithDuration:0.3
+    NSTimeInterval duration = MIN(0.3, 0.3*2000./-velocity.x);
+    [UIView animateWithDuration:duration
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         
+                         self.topCard.transform = CGAffineTransformMakeRotation(-M_PI_2);
                          self.topCard.ezX = -(self.topCard.ezWidth+50);
-                         self.topCard.ezY += velocity.y*0.05;
-                         self.topCard.transform = CGAffineTransformIdentity;
+                         self.topCard.ezY += velocity.y*0.2;
                          self.middleCard.frame = self.originalTopFrame;
                          self.bottomCard.frame = self.originalMiddleFrame;
                          self.cardOnDeck.alpha = 1.0;
@@ -140,6 +152,18 @@
                          self.topCardIsDragging = NO;
                          [self layoutSubviews];
                      }];
+}
+
+- (void) setMediaItems {
+    self.topCard.mediaItem = [self.datasource itemForTopCard];
+    self.middleCard.mediaItem = [self.datasource itemForMiddleCard];
+    self.bottomCard.mediaItem = [self.datasource itemForBottomCard];
+    self.cardOnDeck.mediaItem = [self.datasource itemForCardOnDeck];
+}
+
+- (void) setDatasource:(id<TDCardContainerDatasource>)datasource {
+    _datasource = datasource;
+    [self setMediaItems];
 }
 
 - (void) swapCards {
@@ -159,6 +183,7 @@
     self.bottomCard.tag = 1;
     self.cardOnDeck.tag = 0;
     [self.cardOnDeck attachToContainerView:self];
+    self.cardOnDeck.mediaItem = [self.datasource itemForCardOnDeck];
     [self.topCard.panGestureRecognizer addTarget:self action:@selector(topCardIsBeingPanned:)];
 }
 
@@ -196,6 +221,8 @@
 }
 
 - (void) layoutSubviews {
+    [super layoutSubviews];
+    
     if (self.topCardIsDragging) {
         return;
     }

@@ -42,6 +42,8 @@
     [button.topButton addTarget:button action:@selector(touchUpOutsideAction) forControlEvents:UIControlEventTouchUpOutside];
     [button.topButton addTarget:button action:@selector(touchUpOutsideAction) forControlEvents:UIControlEventTouchDragOutside];
     
+    button.cornerRadius = 8.0;
+    
     return button;
 }
 

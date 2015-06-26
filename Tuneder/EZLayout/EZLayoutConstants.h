@@ -13,7 +13,7 @@
 /* DEBUG */
 // YES: Dotted Lines will appear around all views to show their containment.
 // NO: No dotted lines around views
-#define kEZDebugMode NO
+#define kEZDebugMode YES
 
 
 /* LAYOUT CONTAINTERS */
